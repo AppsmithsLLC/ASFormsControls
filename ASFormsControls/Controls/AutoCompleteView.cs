@@ -124,6 +124,9 @@ namespace ASFormsControls.Client.Controls
 
         private void UpdateSuggestions()
         {
+            if (ItemsSource == null)
+                return;
+
             var suggestions = new List<string>();
             foreach (var item in ItemsSource)
             {
