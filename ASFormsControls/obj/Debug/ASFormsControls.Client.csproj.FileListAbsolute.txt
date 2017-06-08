@@ -1,0 +1,13 @@
+c:\users\willi\onedrive\documents\visual studio 2017\Projects\ASFormsControls\bin\Debug\ASFormsControls.dll
+c:\users\willi\onedrive\documents\visual studio 2017\Projects\ASFormsControls\bin\Debug\ASFormsControls.pdb
+c:\users\willi\onedrive\documents\visual studio 2017\Projects\ASFormsControls\obj\Debug\ASFormsControls.dll
+c:\users\willi\onedrive\documents\visual studio 2017\Projects\ASFormsControls\obj\Debug\ASFormsControls.pdb
+H:\Projects\ASFormsControls\ASFormsControls\bin\Debug\ASFormsControls.dll
+H:\Projects\ASFormsControls\ASFormsControls\bin\Debug\ASFormsControls.pdb
+H:\Projects\ASFormsControls\ASFormsControls\obj\Debug\ASFormsControls.Client.csprojResolveAssemblyReference.cache
+H:\Projects\ASFormsControls\ASFormsControls\obj\Debug\ASFormsControls.dll
+H:\Projects\ASFormsControls\ASFormsControls\obj\Debug\ASFormsControls.pdb
+H:\Projects\ASFormsControls\ASFormsControls\obj\Debug\ASFormsControls.dll.mdb
+H:\Projects\ASFormsControls\ASFormsControls\bin\Debug\ASFormsControls.dll.mdb
+H:\Projects\ASFormsControls\ASFormsControls\obj\Debug\ASFormsControls.dll.mdb
+H:\Projects\ASFormsControls\ASFormsControls\bin\Debug\ASFormsControls.dll.mdb

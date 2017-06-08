@@ -1,0 +1,2 @@
+android.app.Application
+ASFormsControls.Droid.ASFormsControls.Droid
