@@ -26,6 +26,10 @@ namespace ASFormsControls.Droid.Renderers
                 Control.InputType = Android.Text.InputTypes.TextFlagAutoComplete;
                 Control.ImeOptions = Android.Views.InputMethods.ImeAction.Next;
                 Control.Hint = Element.PlaceholderText;
+
+                //In case the bound property was pre-populated
+                if (Element.Text != null)
+                    Control.Text = Element.Text;
             }
 
             if (e.NewElement == null)
@@ -67,6 +71,7 @@ namespace ASFormsControls.Droid.Renderers
             Element.Text = e.Text.ToString();
 
             //Move the cursor to the end of the line otherwise it moves to the front?!
+            //This isn't ideal because it interrupts a user trying to edit mid-string
             Control.SetSelection(_text.Length, _text.Length);
         }
 
