@@ -10,7 +10,7 @@ namespace ASFormsControls.Client.Controls
 {
     public class AutoCompleteView : View
     {
-        public event EventHandler<int> ItemClick;
+        public event EventHandler<string> ItemClick;
 
         private BindingBase _itemDisplayBinding;
         public BindingBase ItemDisplayBinding
@@ -86,12 +86,12 @@ namespace ASFormsControls.Client.Controls
 
         #region Event Handlers
 
-        public void OnItemClick(int selectedIndex)
+        public void OnItemClick(string selectedString)
         {
             if (ItemClick != null)
-                ItemClick(this, selectedIndex);
+                ItemClick(this, selectedString);
             else
-                ItemClickCommand?.Execute(selectedIndex);
+                ItemClickCommand?.Execute(selectedString);
         }
 
         #endregion

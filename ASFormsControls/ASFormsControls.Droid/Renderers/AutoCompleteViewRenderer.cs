@@ -13,7 +13,6 @@ namespace ASFormsControls.Droid.Renderers
 {
     public class AutoCompleteViewRenderer : ViewRenderer<AutoCompleteView, AutoCompleteTextView>, IOnItemClickListener
     {
-        private string _text;
         private ArrayAdapter _autoCompleteAdapter;
 
         protected override void OnElementChanged(ElementChangedEventArgs<AutoCompleteView> e)
@@ -67,18 +66,16 @@ namespace ASFormsControls.Droid.Renderers
 
         private void OnTextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
-            _text = e.Text.ToString();
             Element.Text = e.Text.ToString();
 
             //Move the cursor to the end of the line otherwise it moves to the front?!
             //This isn't ideal because it interrupts a user trying to edit mid-string
-            Control.SetSelection(_text.Length, _text.Length);
+            Control.SetSelection(e.Text.ToString().Length, e.Text.ToString().Length);
         }
 
         public void OnItemClick(AdapterView parent, Android.Views.View view, int position, long id)
         {
-            int index = _autoCompleteAdapter.GetPosition(_text);
-            Element.OnItemClick(index);
+            Element.OnItemClick(Control.Text);
         }
     }
 }
